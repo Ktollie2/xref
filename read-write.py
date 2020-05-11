@@ -3,7 +3,7 @@ from subprocess import *
 
 
 def createFile():
-    with open("test.txt", "r") as x:
+    with open("test.java", "r") as x:
         writeOuput(x)
 
 
