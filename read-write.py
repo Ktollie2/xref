@@ -2,15 +2,16 @@ from subprocess import *
 
 
 
-def createFile():
+def readFile():
     with open("test.java", "r") as x:
         writeOuput(x)
 
 
 
 def writeOuput(y):
-    for line in y:
-        print(line)
+    z = open("test.html", "w")
+    for lines in y:
+        z.write(lines)
         
     
-createFile()
+readFile()
