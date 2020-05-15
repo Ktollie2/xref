@@ -3,7 +3,7 @@ from subprocess import *
 
 
 def readFile():
-    with open("AsemotaDice.java", "r") as x:
+    with open("AsemotaTurtle.java", "r") as x:
         writeOuput(x)
 
 
