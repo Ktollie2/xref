@@ -4,7 +4,7 @@ import os
 
 
 def readFile():
-    with open("AsemotaDice.java", "r") as x:
+    with open("AsemotaTurtle.java", "r") as x:
         writeOuput(x)
 
 
@@ -45,7 +45,12 @@ def writeOuput(y):
                         z.write(" %s " %word)
         ##z.write("\n\t\t\t%s" %lines)
         z.write("<br>")
-        
+
+    ##We tried to get the links working but it couldn't work##
+    ##for lines in y:
+        ##for word in lines.split():
+            ##if(word == "main(String[]"):
+                ##z.write("<a href=\"www.google.com\">%s</a>" %word)    
     z.write("\n\t\t</p>")
     z.write("\n\t</html>")
 classFiles()
