@@ -14,7 +14,12 @@ def writeOuput(y):
     z.write("\n\t<html>")
     z.write("\n\t\t<code>")
     for lines in y:
-        z.write("\n\t\t\t%s" %lines)
+        for word in lines.split():
+            if(word == "int"):
+                z.write("<b>%s</b> " %word)
+            else:
+                z.write(" %s " %word)
+        ##z.write("\n\t\t\t%s" %lines)
         z.write("<br>")
         
     z.write("\n\t\t</code>")
